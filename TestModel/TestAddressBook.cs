@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using static CRM.AddressBook;
 
 namespace CRM
 {
@@ -25,7 +26,7 @@ namespace CRM
             //when
             _addressBook.AddContacts(new List<Contact> { gauthier });
 
-            //then
+            //the
             Assert.AreEqual(1, _addressBook.Contacts.Count);
         }
 
